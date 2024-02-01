@@ -115,3 +115,23 @@
     display: block;
     opacity: 1;
 } */
+
+.header-menu li a:hover {
+    color: #81B8F9;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+
+  .sub-menu {
+    opacity: 0;
+  }
+
+
+  .header-menu li:hover>.sub-menu {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    opacity: 1;
+    visibility: visible;
+    background-color: #ffffff;
+    color: #000000;
+  }

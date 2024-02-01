@@ -4,7 +4,6 @@ import { initScroll } from "./module/scroll.js";
 import { initObserver } from "./module/observer.js";
 import { initPopup } from "./module/popup.js";
 import { initMenuSLider } from "./module/menuSlider.js";
-import { initPopupMenu } from "./module/popupMenu.js";
 import { initDropList } from "./module/dropList.js";
 import { initSaleSlider } from "./module/saleSlider.js";
 
@@ -19,7 +18,6 @@ window.addEventListener('DOMContentLoaded', () => {
     initObserver();
     initPopup();
     initMenuSLider();
-    initPopupMenu();
     initDropList();
     initSaleSlider();
 

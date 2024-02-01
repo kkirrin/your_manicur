@@ -983,6 +983,14 @@ h2, h3 {
   top: 0px;
 }
 
+.top-10{
+  top: 2.5rem;
+}
+
+.-top-10{
+  top: -2.5rem;
+}
+
 .-z-0{
   z-index: 0;
 }
@@ -1470,6 +1478,24 @@ h2, h3 {
     display: block;
     opacity: 1;
 } */
+
+.header-menu li a:hover {
+  color: #81B8F9;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.sub-menu {
+  opacity: 0;
+}
+
+.header-menu li:hover>.sub-menu {
+  transform: rotateX(0);
+  opacity: 1;
+  visibility: visible;
+  background-color: #ffffff;
+  color: #000000;
+}
 
 @media (min-width: 376px){
   .esm\:flex{
