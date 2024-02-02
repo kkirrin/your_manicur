@@ -1156,10 +1156,6 @@ h2, h3 {
   justify-content: space-between;
 }
 
-.justify-around{
-  justify-content: space-around;
-}
-
 .justify-evenly{
   justify-content: space-evenly;
 }
@@ -1274,11 +1270,6 @@ h2, h3 {
 .px-12{
   padding-left: 3rem;
   padding-right: 3rem;
-}
-
-.px-2{
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
 }
 
 .px-4{
@@ -1476,6 +1467,12 @@ h2, h3 {
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000), var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
 }
 
+.transition-all{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
 .transition-colors{
   transition-property: color, background-color, border-color, text-decoration-color, fill, stroke;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1557,9 +1554,9 @@ h2, h3 {
 }
 
 .header-menu li:hover {
-  color: #81B8F9;
-  font-weight: 500;
-  transition: color 0.3s ease;
+  color: rgb(210, 50, 62);
+  font-weight: 800;
+  transition: all 0.6s ease;
 }
 
 .sub-menu {
@@ -1702,6 +1699,30 @@ h2, h3 {
   .sale-item {
     max-width: 200px;
   }
+}
+
+.scroll-top {
+  background-color: rgb(210, 50, 62);
+}
+
+.arrow {
+  margin-left: 5px;
+}
+
+.hover\:bg-red:hover{
+  --tw-bg-opacity: 1;
+  background-color: rgb(210 50 62 / var(--tw-bg-opacity));
+}
+
+.hover\:text-red:hover{
+  --tw-text-opacity: 1;
+  color: rgb(210 50 62 / var(--tw-text-opacity));
+}
+
+.hover\:transition-all:hover{
+  transition-property: all;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
 }
 
 @media (min-width: 376px){
@@ -2038,11 +2059,6 @@ h2, h3 {
   .md\:px-6{
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-  }
-
-  .md\:px-7{
-    padding-left: 1.75rem;
-    padding-right: 1.75rem;
   }
 
   .md\:py-10{

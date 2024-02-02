@@ -112,9 +112,9 @@
 
 
 .header-menu li:hover {
-    color: #81B8F9;
-    font-weight: 500;
-    transition: color 0.3s ease;
+    color: rgb(210, 50, 62);
+    font-weight: 800;
+    transition: all 0.6s ease;
   }
 
 
@@ -264,4 +264,14 @@
     .sale-item {
         max-width: 200px;
     }
+}
+
+
+
+.scroll-top {
+    background-color: rgb(210, 50, 62);
+}
+
+.arrow {
+    margin-left: 5px;
 }
