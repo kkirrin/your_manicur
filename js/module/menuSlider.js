@@ -37,12 +37,12 @@ export const initMenuSLider = () => {
                 slidesPerView: 1,
                 speed: 1500,
                 breakpoints: {
-                    320: {
-                        slidesPerView: 3,
+                    420: {
+                        slidesPerView: 2,
                         spaceBetween: 5,
                     },
                     767: {
-                        slidesPerView: 5,
+                        slidesPerView: 7,
                         spaceBetween: 10,
                     },
                 },

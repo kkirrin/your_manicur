@@ -30,13 +30,10 @@
 
 .btn__menu.active {
     transition: 1s ease;
-    background-color: #fcbc40;
 }
 
 .btn__menu.active svg {
     transition: 1s ease;
-    stroke-dasharray: #fcbc40;
-    stroke-dashoffset: #fcbc40;
 }
 .btn__menu svg path {
     transition: stroke-dasharray var(--duration, 0.85s) var(--easing, ease) var(--delay, 0s), stroke-dashoffset var(--duration, 0.85s) var(--easing, ease) var(--delay, 0s);
@@ -89,7 +86,6 @@
 
 .btn__menu--mobile.active {
     transition: 1s ease;
-    background-color: #fcbc40;
 }
 .btn__menu--mobile svg {
     width: 64px;

@@ -111,20 +111,52 @@
 }
 
 
-/* .menu-slide:hover ~ ul {
-    display: block;
-    opacity: 1;
-} */
-
-.header-menu li a:hover {
+.header-menu li:hover {
     color: #81B8F9;
     font-weight: 500;
     transition: color 0.3s ease;
   }
 
-  .sub-menu {
+
+.sub-menu {
+    position: absolute; 
+    top: 100%; 
+    margin-top: 30px;
+    width: 300px;
+    z-index: 5;
+    -webkit-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -webkit-transform: rotateX(-90deg);
+    transform: rotateX(-90deg);
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease;
     opacity: 0;
+    visibility: hidden;
+    text-transform: lowercase;
+}
+
+
+.sidebar_menu {
+    position: absolute;
+    top: 30px;
+    right: 0;
+    width: 250px;  
+    height: 80%;  
+    background-color: white; 
+    padding: 20px; 
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+    z-index: 100; 
+    overflow-y: auto; 
+    
   }
+  
+  /* Скрыть скроллбар */
+  .sidebar_menu::-webkit-scrollbar {
+    display: none;
+  }
+
 
 
   .header-menu li:hover>.sub-menu {
@@ -135,3 +167,101 @@
     background-color: #ffffff;
     color: #000000;
   }
+
+
+  .sidebar {
+    width: 25%; 
+    height: 100vh;
+    max-width:250px;
+}
+
+.wrapper {
+    display: flex;
+}
+
+
+@media (max-width:1920px) {
+    .product-item {
+        width: 320px;
+    }
+    .map {
+        width: 1300px;
+        height: 434px;
+    }
+}
+@media (max-width:1420px) {
+    .product-item {
+        width: 300px;
+    }
+    .map {
+        width: 1200px;
+        height: 434px;
+    }
+}
+
+@media (max-width:1361px) {
+    .product-item {
+        width: 290px;
+    }
+    .map {
+        width: 1100px;
+        height: 434px;
+    }
+}
+@media (max-width:1319px) {
+    .product-item {
+        width: 280px;
+    }
+    
+}
+@media (max-width:1284px) {
+    .product-item {
+        width: 270px;
+    }
+}
+
+
+
+@media (max-width:1200px) {
+    .product-item {
+        width: 230px;
+    }
+    .map {
+        width: 800px;
+        height: 434px;
+    }
+}
+@media (max-width:1030px) {
+    .product-item {
+        width: 165px;
+    }
+    .map {
+        width: 600px;
+        height: 434px;
+    }
+}
+
+@media (max-width:769px) {
+    .product-item {
+        width: 150px;
+    }
+    .map {
+        width: 600px;
+        height: 340px;
+    }
+}
+
+@media (max-width:640px) {
+    .map {
+        width: 330px;
+        height: 340px;
+    }
+}
+
+
+
+@media(max-width:1000px) {
+    .sale-item {
+        max-width: 200px;
+    }
+}
