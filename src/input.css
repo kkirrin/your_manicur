@@ -19,7 +19,7 @@
 /* Зарегистрируйте пользовательское семейство шрифтов и сообщите браузеру, где его найти. */
 @font-face {
     font-family: 'Monsteratt';
-    src: url('../src/fonts/Montserrat-Italic-VariableFont_wght.ttf');
+    src: url('../src/fonts/Montserrat-VariableFont_wght.ttf');
     font-weight: normal;
     font-style: normal;
     font-display: swap;
@@ -275,3 +275,13 @@
 .arrow {
     margin-left: 5px;
 }
+
+@media (max-width: 460px) {
+    li.rounded-md.bg-light-gray:first-child,
+    li.rounded-md.bg-light-gray:last-child {
+      width: 100%;
+    }
+  }
+
+  
+  

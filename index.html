@@ -19,8 +19,8 @@
             <div class="container md:gap-5 items-center justify-between flex md:pt-2">
 
                 <!-- Мобильная кнопка -->
-                <div class="flex items-center justify-center">
-                    <div class="btn__menu--mobile rounded-xl shadow-md shadow-main-black items-center gap-10 flex esm:flex sm:hidden md:hidden">
+                <div class="flex items-center justify-center gap-2">
+                    <div class="btn__menu--mobile shadow-main-black items-center gap-6 flex esm:flex sm:hidden md:hidden">
                         <button class="flex items-center gap-2">
                             <svg class="h-3 w-3" viewBox="0 0 64 48">
                                 <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
@@ -31,14 +31,19 @@
                         
                     </div>
 
-                    <img class="m-auto w-24 flex esm:flex sm:hidden md:hidden" src="./src/img/logo.png" alt="Logo">
+                    <img class="m-auto w-28 flex esm:flex sm:hidden md:hidden" src="./src/img/logo.png" alt="Logo">
 
                     
                     
             
-                    <div class="pl-10 hidden esm:hidden sm:flex md:flex">
+                    <div class=" hidden esm:hidden sm:flex md:flex gap-6">
                         <img class="m-auto w-32 md:w-48" src="./src/img/logo.png" alt="Logo">
-                        <input class="rounded-md bg-light-gray py-3 px-5 w-[400px] hidden esm:hidden sm:flex" type="search" placeholder="Поиск по товарам...">
+                        <div class="flex items-center">
+                            <div class="relative">
+                                <input class="rounded-md bg-light-gray py-3 px-5 hidden esm:hidden sm:flex" type="search" placeholder="Поиск по товарам...">
+                                <img src="./src/img/icons/search.svg" alt="Search" class="h-6 w-6 absolute top-1/2 right-3 transform -translate-y-1/2"/>
+                            </div>
+                          </div>
                     </div>
 
                     <!-- <img class="m-auto w-32 md:w-48 block md:hidden" src="./src/img/logo.png" alt="Logo"> -->
@@ -91,9 +96,7 @@
                 <div class="gap-5 items-center justify-center hidden esm:hidden sm:flex md:hidden">
                     <span class="">Доставка и оплата</span>
                     <span class="">Контакты</span>
-                    <!-- <span class="text-white py-2 px-1 rounded-md bg-bg-black" href="contact.html">Вход/регистрация</span> -->
-                    <img class=" bg-bg-black p-2 rounded-md" src="./src/img/icons/login.svg" alt="" ></a></li>
-                    <img class=" bg-light-gray p-2 rounded-md" src="./src/img/icons/search.svg" alt="" ></a></li>
+                    <a class="text-white py-3 px-2 rounded-md bg-bg-black" href="contact.html">Вход/регистрация</a>
                 </div>
 
                 <div class="gap-5 items-center justify-center flex sm:hidden md:hidden">
@@ -101,10 +104,10 @@
                         <button class="text-main-black" href="#">
                             <img class="bg-bg-gray p-2 rounded-md up" src="./src/img/icons/cart.svg" alt="" >
                         </button>
-                        <span>0</span> <span>шт</span><span>()</span>
+                        <span class="text-xs">0</span> <span class="text-xs">шт</span><span>()</span>
                     </div>
-                    <img class=" bg-bg-black p-2 rounded-md" src="./src/img/icons/login.svg" alt="" ></a></li>
                     <img class=" bg-light-gray p-2 rounded-md" src="./src/img/icons/search.svg" alt="" ></a></li>
+                    <img class=" bg-bg-black p-2 rounded-md" src="./src/img/icons/login.svg" alt="" ></a></li>
                 </div>
 
                 
@@ -116,7 +119,7 @@
                         <button class="text-main-black" href="#">
                             <img class="bg-bg-gray p-2 rounded-md up" src="./src/img/icons/cart.svg" alt="" >
                         </button>
-                        <span>0</span> <span>шт</span><span>(рублей)</span>
+                        <span>0</span> <span>шт</span><span>()</span>
                     </li>
                 </ul>
 
@@ -126,9 +129,9 @@
 
         <main>
             <h1 class="visually-hidden">Скрытый заголовок</h1>
-            <section class="py-20">
+            <section class="pt-28">
                 <div class="container">
-                    <menu class="header-menu py-16 hidden esm:block sm:block md:block">
+                    <menu class="header-menu py-0 esm:py-0 sm:py-8 md:py-9 hidden esm:hidden sm:block md:block">
                         <ul class="gap-4 relative flex justify-start flex-wrap">
                         
                             <li class="menu-slide">
@@ -846,58 +849,46 @@
                     
                 </div>
                 <div class="b-marquee w-full my-10">
-                    <div class="b-marquee__text"> &compfn;Набор масел 25 шт за 2000 рублей! &compfn;Набор масел 25 шт за 2000 рублей! &compfn;Набор масел 25 шт за 2000 рублей! &compfn;Набор масел 25 шт за 2000 рублей! &compfn;Набор масел 25 шт за 2000 рублей! &compfn;Набор масел 25 шт за 2000 рублей! &compfn;Набор масел 25 шт за 2000 рублей! &compfn;Набор масел 25 шт за 2000 рублей! &compfn;Набор масел 25 шт за 2000 рублей! &compfn;Набор масел 25 шт за 2000 рублей!</div>
+                    <div class="b-marquee__text text-sm esm:text-sm sm:text-lg md:text-3xl"> &compfn;Набор масел 25 шт за 2000 рублей! &compfn;Набор масел 25 шт за 2000 рублей! &compfn;Набор масел 25 шт за 2000 рублей! &compfn;Набор масел 25 шт за 2000 рублей! &compfn;Набор масел 25 шт за 2000 рублей! &compfn;Набор масел 25 шт за 2000 рублей! &compfn;Набор масел 25 шт за 2000 рублей! &compfn;Набор масел 25 шт за 2000 рублей! &compfn;Набор масел 25 шт за 2000 рублей! &compfn;Набор масел 25 шт за 2000 рублей!</div>
                 </div>
             </section>
 
             <!-- Категории -->
-            <section class="esm:py-5 sm:py-8 md:pb-20">
+            <section class="py-5 esm:py-5 sm:py-8 md:pb-20">
                 <div class="container">
-                    <h2 class="text-bg-black text-2xl esm:text-2xl sm:text-3xl md:text-5xl esm:py-2 sm:py-4 md:py-10"> Категории </h2>
+                    <h2 class=" text-bg-black text-2xl esm:text-2xl sm:text-3xl md:text-5xl py-5 esm:py-5 sm:py-5 md:py-10 font-bold"> Категории </h2>
                     
 
-                    <div class="flex flex-wrap gap-4">
-                        <div class="rounded-md bg-light-gray hover:bg-red transition-all relative esm:w-[180px] sm:w-[167px] md:w-[264px] esm:h-[158px] sm:h-[167px] md:h-[264px] overflow-hidden">
+                    <ul class="flex flex-wrap gap-4 list__category">
+                        <li class="rounded-md bg-light-gray hover:bg-red transition-all relative w-[157px] esm:w-[164px] sm:w-[158px] md:w-[264px] h-[158px] esm:h-[158px] sm:h-[167px] md:h-[264px] overflow-hidden">
                             <p class="text-bg-black esm:text-sm sm:text-sm md:text-xl p-8 font-black">Гель лаки</p>
                             <img class="absolute left-12 -bottom-16 mb-2 esm:w-[263px] sm:w-[360px] md:w-[360px]" src="./src/img/category/category_2.png" alt="">
-                        </div>
-                        <div class="rounded-md bg-light-gray hover:bg-red transition-all relative esm:w-[180px] sm:w-[167px] md:w-[264px] esm:h-[158px] sm:h-[167px] md:h-[264px] overflow-hidden">
+                        </li>  
+                        <li class="rounded-md bg-light-gray hover:bg-red transition-all relative w-[157px] esm:w-[164px] sm:w-[158px] md:w-[264px] h-[158px] esm:h-[158px] sm:h-[167px] md:h-[264px] overflow-hidden">
                             <p class="text-bg-black esm:text-sm sm:text-sm md:text-xl p-8 font-black">Гель лаки</p>
-                            <img class="absolute left-12 -bottom-16 mb-2 esm:w-[263px] sm:w-[360px] md:w-[360px]" src="./src/img/category/category_3.png" alt="">
-                        </div>
-                        <div class="rounded-md bg-light-gray hover:bg-red transition-all relative esm:w-[180px] sm:w-[167px] md:w-[264px] esm:h-[158px] sm:h-[167px] md:h-[264px] overflow-hidden">
+                            <img class="absolute left-12 -bottom-16 mb-2 esm:w-[263px] sm:w-[360px] md:w-[360px]" src="./src/img/category/category_2.png" alt="">
+                        </li>  
+                        <li class="rounded-md bg-light-gray hover:bg-red transition-all relative w-[157px] esm:w-[164px] sm:w-[158px] md:w-[264px] h-[158px] esm:h-[158px] sm:h-[167px] md:h-[264px] overflow-hidden">
                             <p class="text-bg-black esm:text-sm sm:text-sm md:text-xl p-8 font-black">Гель лаки</p>
-                            <img class="absolute left-12 -bottom-16 mb-2 esm:w-[263px] sm:w-[360px] md:w-[360px]" src="./src/img/category/category_1.png" alt="">
-                        </div>
-                        <div class="rounded-md bg-light-gray hover:bg-red transition-all relative esm:w-[180px] sm:w-[167px] md:w-[264px] esm:h-[158px] sm:h-[167px] md:h-[264px] overflow-hidden">
+                            <img class="absolute left-12 -bottom-16 mb-2 esm:w-[263px] sm:w-[360px] md:w-[360px]" src="./src/img/category/category_2.png" alt="">
+                        </li>  
+                        <li class="rounded-md bg-light-gray hover:bg-red transition-all relative w-[157px] esm:w-[164px] sm:w-[158px] md:w-[264px] h-[158px] esm:h-[158px] sm:h-[167px] md:h-[264px] overflow-hidden">
                             <p class="text-bg-black esm:text-sm sm:text-sm md:text-xl p-8 font-black">Гель лаки</p>
-                            <img class="absolute left-12 -bottom-16 mb-2 esm:w-[263px] sm:w-[360px] md:w-[360px]" src="./src/img/category/category_5.png" alt="">
-                        </div>
-                        <div class="rounded-md bg-light-gray hover:bg-red transition-all relative esm:w-[180px] sm:w-[167px] md:w-[264px] esm:h-[158px] sm:h-[167px] md:h-[264px] overflow-hidden">
+                            <img class="absolute left-12 -bottom-16 mb-2 esm:w-[263px] sm:w-[360px] md:w-[360px]" src="./src/img/category/category_2.png" alt="">
+                        </li>  
+                        <li class="rounded-md bg-light-gray hover:bg-red transition-all relative w-[157px] esm:w-[164px] sm:w-[158px] md:w-[264px] h-[158px] esm:h-[158px] sm:h-[167px] md:h-[264px] overflow-hidden">
                             <p class="text-bg-black esm:text-sm sm:text-sm md:text-xl p-8 font-black">Гель лаки</p>
-                            <img class="absolute left-12 -bottom-16 mb-2 esm:w-[263px] sm:w-[360px] md:w-[360px]" src="./src/img/category/category_4.png" alt="">
-                        </div>
-                        <div class="rounded-md bg-light-gray hover:bg-red transition-all relative esm:w-[180px] sm:w-[167px] md:w-[264px] esm:h-[158px] sm:h-[167px] md:h-[264px] overflow-hidden">
+                            <img class="absolute left-12 -bottom-16 mb-2 esm:w-[263px] sm:w-[360px] md:w-[360px]" src="./src/img/category/category_2.png" alt="">
+                        </li>  
+                        <li class="rounded-md bg-light-gray hover:bg-red transition-all relative w-[157px] esm:w-[164px] sm:w-[158px] md:w-[264px] h-[158px] esm:h-[158px] sm:h-[167px] md:h-[264px] overflow-hidden">
                             <p class="text-bg-black esm:text-sm sm:text-sm md:text-xl p-8 font-black">Гель лаки</p>
-                            <img class="absolute left-12 -bottom-16 mb-2 esm:w-[263px] sm:w-[360px] md:w-[360px]" src="./src/img/category/category_4.png" alt="">
-                        </div>
-                        <div class="rounded-md bg-light-gray hover:bg-red transition-all relative esm:w-[180px] sm:w-[167px] md:w-[264px] esm:h-[158px] sm:h-[167px] md:h-[264px] overflow-hidden">
+                            <img class="absolute left-12 -bottom-16 mb-2 esm:w-[263px] sm:w-[360px] md:w-[360px]" src="./src/img/category/category_2.png" alt="">
+                        </li>  
+                        <li class="rounded-md bg-light-gray hover:bg-red transition-all relative w-[157px] esm:w-[164px] sm:w-[158px] md:w-[264px] h-[158px] esm:h-[158px] sm:h-[167px] md:h-[264px] overflow-hidden">
                             <p class="text-bg-black esm:text-sm sm:text-sm md:text-xl p-8 font-black">Гель лаки</p>
-                            <img class="absolute left-12 -bottom-16 mb-2 esm:w-[263px] sm:w-[360px] md:w-[360px]" src="./src/img/category/category_5.png" alt="">
-                        </div>
-                        <div class="rounded-md bg-light-gray hover:bg-red transition-all relative esm:w-[180px] sm:w-[167px] md:w-[264px] esm:h-[158px] sm:h-[167px] md:h-[264px] overflow-hidden">
-                            <p class="text-bg-black esm:text-sm sm:text-sm md:text-xl p-8 font-black">Гель лаки</p>
-                            <img class="absolute left-12 -bottom-16 mb-2 esm:w-[263px] sm:w-[360px] md:w-[360px]" src="./src/img/category/category_6.png" alt="">
-                        </div>
-                        <div class="rounded-md bg-light-gray hover:bg-red transition-all relative esm:w-[180px] sm:w-[167px] md:w-[264px] esm:h-[158px] sm:h-[167px] md:h-[264px] overflow-hidden">
-                            <p class="text-bg-black esm:text-sm sm:text-sm md:text-xl p-8 font-black">Гель лаки</p>
-                            <img class="absolute left-12 -bottom-16 mb-2 esm:w-[263px] sm:w-[360px] md:w-[360px]" src="./src/img/category/category_7.png" alt="">
-                        </div>
-                        <div class="rounded-md bg-light-gray hover:bg-red transition-all relative esm:w-[180px] sm:w-[167px] md:w-[264px] esm:h-[158px] sm:h-[167px] md:h-[264px] overflow-hidden">
-                            <p class="text-bg-black esm:text-sm sm:text-sm md:text-xl p-8 font-black">Гель лаки</p>
-                            <img class="absolute left-12 -bottom-16 mb-2 esm:w-[263px] sm:w-[360px] md:w-[360px]" src="./src/img/category/category_8.png" alt="">
-                        </div>
-                    </div>
+                            <img class="absolute left-12 -bottom-16 mb-2 esm:w-[263px] sm:w-[360px] md:w-[360px]" src="./src/img/category/category_2.png" alt="">
+                        </li>  
+                    </ul>
 
 
                 </div>
@@ -908,7 +899,7 @@
                 <div class="container">
                     <div class="flex items-center justify-between">
                         <div>
-                            <h2 class="text-bg-black text-2xl esm:text-2xl sm:text-3xl md:text-5xl py-4 esm:py-4 sm:py-4 md:py-10"> % Распродажа | <span class="text-gray text-sm esm:text-sm sm:text-base md:text-xl">Новинки</span></h2> 
+                            <h2 class="text-bg-black text-2xl esm:text-2xl sm:text-3xl md:text-5xl py-4 esm:py-4 sm:py-4 md:py-10 font-bold"> <span class="text-red font-bold">%</span> Распродажа | <span class="text-gray text-sm esm:text-sm sm:text-base md:text-xl">Новинки</span></h2> 
                         </div>
 
                                             
@@ -916,11 +907,11 @@
                             <div class="swiper-pagination"></div>
                             <div>
                                 <button
-                                    class="prev-new--item-1 bg-pink rounded-lg shadow-md shadow-main-black -z-0 mr-5">
+                                    class="prev-new--item-1 bg-white rounded-lg shadow-md shadow-main-black -z-0 mr-5">
                                     <img src="./src/img/icons/arrow_prev.svg" alt="влево" />
                                 </button>
                                 <button
-                                    class="next-new--item-1 bg-pink rounded-lg shadow-md shadow-main-black -z-0 mr-5">
+                                    class="next-new--item-1 bg-white rounded-lg shadow-md shadow-main-black -z-0 mr-5">
                                     <img src="./src/img/icons/arrow_next.svg" alt="вправо" />
                                 </button>
                             </div>
@@ -931,39 +922,38 @@
                     <div class="new-items-section">
                         <div class="swiper new-items-1">
                             <div class="swiper-wrapper gap-[20px]">  
- 
                                 <div class="swiper-slide sale-item rounded-xl relative">
                                     <div class="new-items-section__img relative">
                                         <img class="rounded-xl h-auto" src="./src/img/sale/sale1.png" alt="" />
                                     </div>
     
-                                    <p class="font-extrabold text-xs sm:text-base md:text-xl pt-2 pb-5 text-bg-black uppercase">ALBI DIAMOND
+                                    <p class="font-black text-xs sm:text-base md:text-xl pt-2 pb-5 text-bg-black uppercase">ALBI DIAMOND
                                     </p>
                                     
-                                    <p class="font-medium text-xs sm:text-base md:text-xl pt-2 pb-5">Артикул: <span>123123213</span>
+                                    <p class="font-medium text-xs sm:text-base md:text-xl pt-2 pb-5 text-gray">Артикул: <span>123123213</span>
                                     </p>
     
                                     <p class="font-medium text-xs sm:text-base md:text-xl pt-2 pb-5 hidden esm:hidden sm:hidden md:block">Количество: 
-                                        <ul class="gap-5 hidden esm:hidden sm:hidden md:flex">
-                                            <li class="text-light-gray">15 мл</li>
-                                            <li class="text-light-gray">30 мл</li>
-                                            <li class="text-light-gray">50 мл</li>
-                                            <li class="text-light-gray">100 мл</li>
+                                        <ul class="gap-5 hidden esm:hidden sm:hidden md:flex text-gray font-bold">
+                                            <li class="text-bg-black">15 мл</li>
+                                            <li class="">30 мл</li>
+                                            <li class="">50 мл</li>
+                                            <li class="">100 мл</li>
                                         </ul>
                                     </p>
     
                                     <p class="font-medium text-xs sm:text-base md:text-xl pt-2 pb-5 hidden esm:hidden sm:hidden md:block">Цвет: 
                                         <ul class="gap-5 hidden esm:hidden sm:hidden md:flex">
-                                            <li class="text-light-gray">Белый</li>
-                                            <li class="text-red">Красный</li>
-                                            <li class="text-green">Зеленый</li>
-                                            <li class="text-light-gray">Желтый</li>
+                                            <li class="text-bg-black">1</li>
+                                            <li class="text-red">2</li>
+                                            <li class="text-green">3</li>
+                                            <li class="text-bg-black">4</li>
                                         </ul>
                                     </p>
                                     
                                     <div class="flex flex-col md:flex-row items-center md:items-start mt-5">
                                         <div class="flex items-center justify-center md:justify-around flex-col esm:flex-col sm:flex-col md:flex-row">
-                                            <div class="font-bold text-sm md:text-2xl md:mb-0 mr-10">2000 р</div>
+                                            <div class="font-bold text-sm md:text-2xl md:mb-0 mr-10 mb-2">2000 р</div>
                                             <div class="flex items-center justify-between gap-2 flex-wrap">
                                                 <div class="flex items-center justify-center gap-2 rounded-lg border-2 border-gray py-2 px-12 sm:px-20 md:px-6 md:py-3">
                                                     <button class="text-bg-black rounded-md bg-gray-700"> - </button>
@@ -979,33 +969,33 @@
                                         <img class="rounded-xl h-auto" src="./src/img/sale/sale1.png" alt="" />
                                     </div>
     
-                                    <p class="font-extrabold text-xs sm:text-base md:text-xl pt-2 pb-5 text-bg-black uppercase">ALBI DIAMOND
+                                    <p class="font-black text-xs sm:text-base md:text-xl pt-2 pb-5 text-bg-black uppercase">ALBI DIAMOND
                                     </p>
                                     
-                                    <p class="font-medium text-xs sm:text-base md:text-xl pt-2 pb-5">Артикул: <span>123123213</span>
+                                    <p class="font-medium text-xs sm:text-base md:text-xl pt-2 pb-5 text-gray">Артикул: <span>123123213</span>
                                     </p>
     
                                     <p class="font-medium text-xs sm:text-base md:text-xl pt-2 pb-5 hidden esm:hidden sm:hidden md:block">Количество: 
-                                        <ul class="gap-5 hidden esm:hidden sm:hidden md:flex">
-                                            <li class="text-light-gray">15 мл</li>
-                                            <li class="text-light-gray">30 мл</li>
-                                            <li class="text-light-gray">50 мл</li>
-                                            <li class="text-light-gray">100 мл</li>
+                                        <ul class="gap-5 hidden esm:hidden sm:hidden md:flex text-gray font-bold">
+                                            <li class="text-bg-black">15 мл</li>
+                                            <li class="">30 мл</li>
+                                            <li class="">50 мл</li>
+                                            <li class="">100 мл</li>
                                         </ul>
                                     </p>
     
                                     <p class="font-medium text-xs sm:text-base md:text-xl pt-2 pb-5 hidden esm:hidden sm:hidden md:block">Цвет: 
                                         <ul class="gap-5 hidden esm:hidden sm:hidden md:flex">
-                                            <li class="text-light-gray">Белый</li>
-                                            <li class="text-red">Красный</li>
-                                            <li class="text-green">Зеленый</li>
-                                            <li class="text-light-gray">Желтый</li>
+                                            <li class="text-bg-black">1</li>
+                                            <li class="text-red">2</li>
+                                            <li class="text-green">3</li>
+                                            <li class="text-bg-black">4</li>
                                         </ul>
                                     </p>
                                     
                                     <div class="flex flex-col md:flex-row items-center md:items-start mt-5">
                                         <div class="flex items-center justify-center md:justify-around flex-col esm:flex-col sm:flex-col md:flex-row">
-                                            <div class="font-bold text-sm md:text-2xl md:mb-0 mr-10">2000 р</div>
+                                            <div class="font-bold text-sm md:text-2xl md:mb-0 mr-10 mb-2">2000 р</div>
                                             <div class="flex items-center justify-between gap-2 flex-wrap">
                                                 <div class="flex items-center justify-center gap-2 rounded-lg border-2 border-gray py-2 px-12 sm:px-20 md:px-6 md:py-3">
                                                     <button class="text-bg-black rounded-md bg-gray-700"> - </button>
@@ -1021,33 +1011,33 @@
                                         <img class="rounded-xl h-auto" src="./src/img/sale/sale1.png" alt="" />
                                     </div>
     
-                                    <p class="font-extrabold text-xs sm:text-base md:text-xl pt-2 pb-5 text-bg-black uppercase">ALBI DIAMOND
+                                    <p class="font-black text-xs sm:text-base md:text-xl pt-2 pb-5 text-bg-black uppercase">ALBI DIAMOND
                                     </p>
                                     
-                                    <p class="font-medium text-xs sm:text-base md:text-xl pt-2 pb-5">Артикул: <span>123123213</span>
+                                    <p class="font-medium text-xs sm:text-base md:text-xl pt-2 pb-5 text-gray">Артикул: <span>123123213</span>
                                     </p>
     
                                     <p class="font-medium text-xs sm:text-base md:text-xl pt-2 pb-5 hidden esm:hidden sm:hidden md:block">Количество: 
-                                        <ul class="gap-5 hidden esm:hidden sm:hidden md:flex">
-                                            <li class="text-light-gray">15 мл</li>
-                                            <li class="text-light-gray">30 мл</li>
-                                            <li class="text-light-gray">50 мл</li>
-                                            <li class="text-light-gray">100 мл</li>
+                                        <ul class="gap-5 hidden esm:hidden sm:hidden md:flex text-gray font-bold">
+                                            <li class="text-bg-black">15 мл</li>
+                                            <li class="">30 мл</li>
+                                            <li class="">50 мл</li>
+                                            <li class="">100 мл</li>
                                         </ul>
                                     </p>
     
                                     <p class="font-medium text-xs sm:text-base md:text-xl pt-2 pb-5 hidden esm:hidden sm:hidden md:block">Цвет: 
                                         <ul class="gap-5 hidden esm:hidden sm:hidden md:flex">
-                                            <li class="text-light-gray">Белый</li>
-                                            <li class="text-red">Красный</li>
-                                            <li class="text-green">Зеленый</li>
-                                            <li class="text-light-gray">Желтый</li>
+                                            <li class="text-bg-black">1</li>
+                                            <li class="text-red">2</li>
+                                            <li class="text-green">3</li>
+                                            <li class="text-bg-black">4</li>
                                         </ul>
                                     </p>
                                     
                                     <div class="flex flex-col md:flex-row items-center md:items-start mt-5">
                                         <div class="flex items-center justify-center md:justify-around flex-col esm:flex-col sm:flex-col md:flex-row">
-                                            <div class="font-bold text-sm md:text-2xl md:mb-0 mr-10">2000 р</div>
+                                            <div class="font-bold text-sm md:text-2xl md:mb-0 mr-10 mb-2">2000 р</div>
                                             <div class="flex items-center justify-between gap-2 flex-wrap">
                                                 <div class="flex items-center justify-center gap-2 rounded-lg border-2 border-gray py-2 px-12 sm:px-20 md:px-6 md:py-3">
                                                     <button class="text-bg-black rounded-md bg-gray-700"> - </button>
@@ -1063,33 +1053,33 @@
                                         <img class="rounded-xl h-auto" src="./src/img/sale/sale1.png" alt="" />
                                     </div>
     
-                                    <p class="font-extrabold text-xs sm:text-base md:text-xl pt-2 pb-5 text-bg-black uppercase">ALBI DIAMOND
+                                    <p class="font-black text-xs sm:text-base md:text-xl pt-2 pb-5 text-bg-black uppercase">ALBI DIAMOND
                                     </p>
                                     
-                                    <p class="font-medium text-xs sm:text-base md:text-xl pt-2 pb-5">Артикул: <span>123123213</span>
+                                    <p class="font-medium text-xs sm:text-base md:text-xl pt-2 pb-5 text-gray">Артикул: <span>123123213</span>
                                     </p>
     
                                     <p class="font-medium text-xs sm:text-base md:text-xl pt-2 pb-5 hidden esm:hidden sm:hidden md:block">Количество: 
-                                        <ul class="gap-5 hidden esm:hidden sm:hidden md:flex">
-                                            <li class="text-light-gray">15 мл</li>
-                                            <li class="text-light-gray">30 мл</li>
-                                            <li class="text-light-gray">50 мл</li>
-                                            <li class="text-light-gray">100 мл</li>
+                                        <ul class="gap-5 hidden esm:hidden sm:hidden md:flex text-gray font-bold">
+                                            <li class="text-bg-black">15 мл</li>
+                                            <li class="">30 мл</li>
+                                            <li class="">50 мл</li>
+                                            <li class="">100 мл</li>
                                         </ul>
                                     </p>
     
                                     <p class="font-medium text-xs sm:text-base md:text-xl pt-2 pb-5 hidden esm:hidden sm:hidden md:block">Цвет: 
                                         <ul class="gap-5 hidden esm:hidden sm:hidden md:flex">
-                                            <li class="text-light-gray">Белый</li>
-                                            <li class="text-red">Красный</li>
-                                            <li class="text-green">Зеленый</li>
-                                            <li class="text-light-gray">Желтый</li>
+                                            <li class="text-bg-black">1</li>
+                                            <li class="text-red">2</li>
+                                            <li class="text-green">3</li>
+                                            <li class="text-bg-black">4</li>
                                         </ul>
                                     </p>
                                     
                                     <div class="flex flex-col md:flex-row items-center md:items-start mt-5">
                                         <div class="flex items-center justify-center md:justify-around flex-col esm:flex-col sm:flex-col md:flex-row">
-                                            <div class="font-bold text-sm md:text-2xl md:mb-0 mr-10">2000 р</div>
+                                            <div class="font-bold text-sm md:text-2xl md:mb-0 mr-10 mb-2">2000 р</div>
                                             <div class="flex items-center justify-between gap-2 flex-wrap">
                                                 <div class="flex items-center justify-center gap-2 rounded-lg border-2 border-gray py-2 px-12 sm:px-20 md:px-6 md:py-3">
                                                     <button class="text-bg-black rounded-md bg-gray-700"> - </button>
@@ -1105,75 +1095,33 @@
                                         <img class="rounded-xl h-auto" src="./src/img/sale/sale1.png" alt="" />
                                     </div>
     
-                                    <p class="font-extrabold text-xs sm:text-base md:text-xl pt-2 pb-5 text-bg-black uppercase">ALBI DIAMOND
+                                    <p class="font-black text-xs sm:text-base md:text-xl pt-2 pb-5 text-bg-black uppercase">ALBI DIAMOND
                                     </p>
                                     
-                                    <p class="font-medium text-xs sm:text-base md:text-xl pt-2 pb-5">Артикул: <span>123123213</span>
+                                    <p class="font-medium text-xs sm:text-base md:text-xl pt-2 pb-5 text-gray">Артикул: <span>123123213</span>
                                     </p>
     
                                     <p class="font-medium text-xs sm:text-base md:text-xl pt-2 pb-5 hidden esm:hidden sm:hidden md:block">Количество: 
-                                        <ul class="gap-5 hidden esm:hidden sm:hidden md:flex">
-                                            <li class="text-light-gray">15 мл</li>
-                                            <li class="text-light-gray">30 мл</li>
-                                            <li class="text-light-gray">50 мл</li>
-                                            <li class="text-light-gray">100 мл</li>
+                                        <ul class="gap-5 hidden esm:hidden sm:hidden md:flex text-gray font-bold">
+                                            <li class="text-bg-black">15 мл</li>
+                                            <li class="">30 мл</li>
+                                            <li class="">50 мл</li>
+                                            <li class="">100 мл</li>
                                         </ul>
                                     </p>
     
                                     <p class="font-medium text-xs sm:text-base md:text-xl pt-2 pb-5 hidden esm:hidden sm:hidden md:block">Цвет: 
                                         <ul class="gap-5 hidden esm:hidden sm:hidden md:flex">
-                                            <li class="text-light-gray">Белый</li>
-                                            <li class="text-red">Красный</li>
-                                            <li class="text-green">Зеленый</li>
-                                            <li class="text-light-gray">Желтый</li>
+                                            <li class="text-bg-black">1</li>
+                                            <li class="text-red">2</li>
+                                            <li class="text-green">3</li>
+                                            <li class="text-bg-black">4</li>
                                         </ul>
                                     </p>
                                     
                                     <div class="flex flex-col md:flex-row items-center md:items-start mt-5">
                                         <div class="flex items-center justify-center md:justify-around flex-col esm:flex-col sm:flex-col md:flex-row">
-                                            <div class="font-bold text-sm md:text-2xl md:mb-0 mr-10">2000 р</div>
-                                            <div class="flex items-center justify-between gap-2 flex-wrap">
-                                                <div class="flex items-center justify-center gap-2 rounded-lg border-2 border-gray py-2 px-12 sm:px-20 md:px-6 md:py-3">
-                                                    <button class="text-bg-black rounded-md bg-gray-700"> - </button>
-                                                    <button class="text-bg-black rounded-md bg-gray-700"> + </button>
-                                                </div>
-                                                <button class="text-white py-2 px-4 md:py-3 md:px-3 rounded-md bg-bg-black flex-1 mt-2 md:mt-0">В корзину</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>   
-                                <div class="swiper-slide sale-item rounded-xl relative">
-                                    <div class="new-items-section__img relative">
-                                        <img class="rounded-xl h-auto" src="./src/img/sale/sale1.png" alt="" />
-                                    </div>
-    
-                                    <p class="font-extrabold text-xs sm:text-base md:text-xl pt-2 pb-5 text-bg-black uppercase">ALBI DIAMOND
-                                    </p>
-                                    
-                                    <p class="font-medium text-xs sm:text-base md:text-xl pt-2 pb-5">Артикул: <span>123123213</span>
-                                    </p>
-    
-                                    <p class="font-medium text-xs sm:text-base md:text-xl pt-2 pb-5 hidden esm:hidden sm:hidden md:block">Количество: 
-                                        <ul class="gap-5 hidden esm:hidden sm:hidden md:flex">
-                                            <li class="text-light-gray">15 мл</li>
-                                            <li class="text-light-gray">30 мл</li>
-                                            <li class="text-light-gray">50 мл</li>
-                                            <li class="text-light-gray">100 мл</li>
-                                        </ul>
-                                    </p>
-    
-                                    <p class="font-medium text-xs sm:text-base md:text-xl pt-2 pb-5 hidden esm:hidden sm:hidden md:block">Цвет: 
-                                        <ul class="gap-5 hidden esm:hidden sm:hidden md:flex">
-                                            <li class="text-light-gray">Белый</li>
-                                            <li class="text-red">Красный</li>
-                                            <li class="text-green">Зеленый</li>
-                                            <li class="text-light-gray">Желтый</li>
-                                        </ul>
-                                    </p>
-                                    
-                                    <div class="flex flex-col md:flex-row items-center md:items-start mt-5">
-                                        <div class="flex items-center justify-center md:justify-around flex-col esm:flex-col sm:flex-col md:flex-row">
-                                            <div class="font-bold text-sm md:text-2xl md:mb-0 mr-10">2000 р</div>
+                                            <div class="font-bold text-sm md:text-2xl md:mb-0 mr-10 mb-2">2000 р</div>
                                             <div class="flex items-center justify-between gap-2 flex-wrap">
                                                 <div class="flex items-center justify-center gap-2 rounded-lg border-2 border-gray py-2 px-12 sm:px-20 md:px-6 md:py-3">
                                                     <button class="text-bg-black rounded-md bg-gray-700"> - </button>
@@ -1188,12 +1136,12 @@
                             <div class="flex esm:flex sm:hidden md:hidden items-center justify-center gap-5 pt-5">
                                 <div class="swiper-pagination"></div>
                                 <div>
-                                    <button
-                                        class="prev-new--item-1 bg-pink rounded-lg shadow-md shadow-main-black -z-0">
+                                     <button
+                                        class="prev-new--item-1 bg-white rounded-lg shadow-md shadow-main-black -z-0 mr-5">
                                         <img src="./src/img/icons/arrow_prev.svg" alt="влево" />
                                     </button>
                                     <button
-                                        class="next-new--item-1 bg-pink rounded-lg shadow-md shadow-main-black -z-0">
+                                        class="next-new--item-1 bg-white rounded-lg shadow-md shadow-main-black -z-0 mr-5">
                                         <img src="./src/img/icons/arrow_next.svg" alt="вправо" />
                                     </button>
                                 </div>
@@ -1204,16 +1152,17 @@
             </section>
 
             <!-- Информационный блог -->
-            <section class="py-3 esm:py-3 sm:py-5 md:py-10">
+            <section class="pb-28 esm:pb-8 sm:pb-8 md:pb-16 pt-28 esm:pt-28 sm:pt-28 md:pt-28">
                 <div class="container grid grid-cols-1 esm:grid-cols-1 sm:grid-cols-2">
                     <div class="flex relative">
                         <div class="w-full">
                             <img class="" src="./src/img/info/infp.png" alt="" />
                         </div>
                     </div>
-                    <div class="p-4 esm:p-4 sm:p-4 md:p-14 relative">
-                        <img class="absolute right-0 top-0" src="./src/img/icons/quotes.svg" alt="ковычки">
-                        <h2 class="text-2xl esm:text-xl sm:text-xl md:text-5xl font-extrabold pb-5">Интернет-магазин «Твой маникюрный»</h2>
+                    <div class="p-0 esm:p-4 sm:p-4 md:p-14 relative">
+                        <img class="absolute right-0 top-0 hidden esm:hidden sm:block md:block" src="./src/img/icons/quotes.svg" alt="ковычки">
+                        <h2 class="text-2xl esm:text-xl sm:text-xl md:text-5xl font-extrabold pb-5 pt-5">Интернет-магазин «Твой маникюрный»</h2>
+                        <img class="absolute right-0 top-7 block esm:block sm:hidden md:hidden w-11 h-10" src="./src/img/icons/quotes.svg" alt="ковычки">
                         <p class="text-sm esm:text-sm sm:text-sm md:text-xl text-bg-black font-semibold">Это ваш идеальный выбор для стильных и здоровых ногтей. В нашем магазине представлены разнообразные лаки, гель-лаки и аксессуары 
                             от ведущих брендов. Мастера-консультанты 
                             помогут подобрать идеальный продукт, учитывая 
@@ -1257,7 +1206,7 @@
                     <div class="mr-10">
                         <p class="text-white font-bold pb-2 uppercase">Клиентам</p>
                         <ul class="text-xs text-white">
-                            <li class="hover:text-red hover:transition-all">Доставка и оплата</li>
+                            <li class="hover:text-red hover:transition-all pb-2">Доставка и оплата</li>
                             <li class="hover:text-red hover:transition-all">Контакты</li>
                         </ul>
                     </div>
@@ -1265,9 +1214,9 @@
                     <div class="mr-10">
                         <p class="text-white font-bold pb-2 uppercase">Контакты</p>
                         <ul class="text-xs text-white">
-                            <li>г. Артем, 1-ая рабочая 41 стр. 1, 2 этаж</li>
-                            <li><a href="tel:+79990586241">+7 (999) 058-62-41</a></li>
-                            <li><a href="email:kalistratovamalai@mail.ru">kalistratovamalai@mail.ru</a></li>
+                            <li class="pb-2">г. Артем, 1-ая рабочая 41 стр. 1, 2 этаж</li>
+                            <li class="pb-2"><a href="tel:+79990586241">+7 (999) 058-62-41</a></li>
+                            <li class="pb-2"><a href="email:kalistratovamalai@mail.ru">kalistratovamalai@mail.ru</a></li>
                         </ul>
                     </div>  
                 </div>
