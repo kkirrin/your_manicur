@@ -16,7 +16,7 @@
     
     <div>
         <header class="border-b-8 z-10 w-full md-28 transition-colors fixed py-4 bg-white">
-            <div class="container md:gap-5 items-center justify-between flex md:pt-2">
+            <div class="wrapper container md:gap-5 items-center justify-between flex md:pt-2">
 
                 <!-- Мобильная кнопка -->
                 <div class="flex items-center justify-center gap-2">
@@ -106,9 +106,54 @@
                         </button>
                         <span class="text-xs">0</span> <span class="text-xs">шт</span><span>()</span>
                     </div>
-                    <img class=" bg-light-gray p-2 rounded-md" src="./src/img/icons/search.svg" alt="" ></a></li>
-                    <img class=" bg-bg-black p-2 rounded-md" src="./src/img/icons/login.svg" alt="" ></a></li>
+                    <a class="popup-link" href="#popup1"><img class=" bg-light-gray p-2 rounded-md" src="./src/img/icons/search.svg" alt="" ></a></li>
+                    <a class="popup-link" href="#popup2"><img class=" bg-bg-black p-2 rounded-md" src="./src/img/icons/login.svg" alt="" ></a></li>
                 </div>
+
+                <section id="popup1" class="popup">
+                    <div class="popup__body">
+                        <div class="popup__content">
+                            <button class="popup__btn close-popup" aria-label="Закрыть" tabindex="4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18" fill="none">
+                                    <path d="M4 1.45508L19.9099 17.365" stroke="#FCBC40"/>
+                                    <path d="M4.54492 16.9099L20.4548 1.00001" stroke="#FCBC40"/>
+                                    </svg>
+                            </button>
+                            <h2 class="text-start text-white z-10 font-normal md:text-4xl text-xl uppercase pb-4 ">Найти</h2>
+            
+                            <div class="flex items-center">
+                                <div class="relative">
+                                    <input class="rounded-md bg-light-gray py-3 px-5" type="search" placeholder="Поиск по товарам...">
+                                    <img src="./src/img/icons/search.svg" alt="Search" class="h-6 w-6 absolute top-1/2 right-3 transform -translate-y-1/2"/>
+                              </div>
+                    </div>
+                </section>
+                <section id="popup2" class="popup">
+                    <div class="popup__body">
+                        <div class="popup__content">
+                            <button class="popup__btn close-popup" aria-label="Закрыть" tabindex="4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18" fill="none">
+                                    <path d="M4 1.45508L19.9099 17.365" stroke="#FCBC40"/>
+                                    <path d="M4.54492 16.9099L20.4548 1.00001" stroke="#FCBC40"/>
+                                    </svg>
+                            </button>
+                            <div class="modal-content">
+                                <ul class="p-5">
+                                    <li>
+                                        <a href="#" class="font-semibold text-main-black block">Личный кабинет</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="font-semibold text-green block pt-5 hover:text-red transition-all">Вход</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="font-semibold  text-dark-pink block pt-5 hover:text-red transition-all">Регистрация</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
                 
                 <ul class="mobile gap-2 flex-wrap text-main-black hidden esm:hidden sm:hidden md:flex items-center justify-center">
@@ -860,34 +905,39 @@
                     
 
                     <ul class="flex flex-wrap gap-4 list__category">
-                        <li class="rounded-md bg-light-gray hover:bg-red transition-all relative w-[157px] esm:w-[164px] sm:w-[158px] md:w-[264px] h-[158px] esm:h-[158px] sm:h-[167px] md:h-[264px] overflow-hidden">
+                        <li class="rounded-md bg-light-gray hover:bg-red transition-all relative w-[157px] esm:w-[184px] sm:w-[184px] md:w-[264px] h-[158px] esm:h-[158px] sm:h-[167px] md:h-[264px] overflow-hidden">
                             <p class="text-bg-black esm:text-sm sm:text-sm md:text-xl p-8 font-black">Гель лаки</p>
                             <img class="absolute left-12 -bottom-16 mb-2 esm:w-[263px] sm:w-[360px] md:w-[360px]" src="./src/img/category/category_2.png" alt="">
-                        </li>  
-                        <li class="rounded-md bg-light-gray hover:bg-red transition-all relative w-[157px] esm:w-[164px] sm:w-[158px] md:w-[264px] h-[158px] esm:h-[158px] sm:h-[167px] md:h-[264px] overflow-hidden">
+                        </li>        
+                        <li class="rounded-md bg-light-gray hover:bg-red transition-all relative w-[157px] esm:w-[184px] sm:w-[184px] md:w-[264px] h-[158px] esm:h-[158px] sm:h-[167px] md:h-[264px] overflow-hidden">
                             <p class="text-bg-black esm:text-sm sm:text-sm md:text-xl p-8 font-black">Гель лаки</p>
                             <img class="absolute left-12 -bottom-16 mb-2 esm:w-[263px] sm:w-[360px] md:w-[360px]" src="./src/img/category/category_2.png" alt="">
-                        </li>  
-                        <li class="rounded-md bg-light-gray hover:bg-red transition-all relative w-[157px] esm:w-[164px] sm:w-[158px] md:w-[264px] h-[158px] esm:h-[158px] sm:h-[167px] md:h-[264px] overflow-hidden">
+                        </li>        
+                        <li class="rounded-md bg-light-gray hover:bg-red transition-all relative w-[157px] esm:w-[184px] sm:w-[184px] md:w-[264px] h-[158px] esm:h-[158px] sm:h-[167px] md:h-[264px] overflow-hidden">
                             <p class="text-bg-black esm:text-sm sm:text-sm md:text-xl p-8 font-black">Гель лаки</p>
                             <img class="absolute left-12 -bottom-16 mb-2 esm:w-[263px] sm:w-[360px] md:w-[360px]" src="./src/img/category/category_2.png" alt="">
-                        </li>  
-                        <li class="rounded-md bg-light-gray hover:bg-red transition-all relative w-[157px] esm:w-[164px] sm:w-[158px] md:w-[264px] h-[158px] esm:h-[158px] sm:h-[167px] md:h-[264px] overflow-hidden">
+                        </li>        
+                        <li class="rounded-md bg-light-gray hover:bg-red transition-all relative w-[157px] esm:w-[184px] sm:w-[184px] md:w-[264px] h-[158px] esm:h-[158px] sm:h-[167px] md:h-[264px] overflow-hidden">
                             <p class="text-bg-black esm:text-sm sm:text-sm md:text-xl p-8 font-black">Гель лаки</p>
                             <img class="absolute left-12 -bottom-16 mb-2 esm:w-[263px] sm:w-[360px] md:w-[360px]" src="./src/img/category/category_2.png" alt="">
-                        </li>  
-                        <li class="rounded-md bg-light-gray hover:bg-red transition-all relative w-[157px] esm:w-[164px] sm:w-[158px] md:w-[264px] h-[158px] esm:h-[158px] sm:h-[167px] md:h-[264px] overflow-hidden">
+                        </li>        
+                        <li class="rounded-md bg-light-gray hover:bg-red transition-all relative w-[157px] esm:w-[184px] sm:w-[184px] md:w-[264px] h-[158px] esm:h-[158px] sm:h-[167px] md:h-[264px] overflow-hidden">
                             <p class="text-bg-black esm:text-sm sm:text-sm md:text-xl p-8 font-black">Гель лаки</p>
                             <img class="absolute left-12 -bottom-16 mb-2 esm:w-[263px] sm:w-[360px] md:w-[360px]" src="./src/img/category/category_2.png" alt="">
-                        </li>  
-                        <li class="rounded-md bg-light-gray hover:bg-red transition-all relative w-[157px] esm:w-[164px] sm:w-[158px] md:w-[264px] h-[158px] esm:h-[158px] sm:h-[167px] md:h-[264px] overflow-hidden">
+                        </li>        
+                        <li class="rounded-md bg-light-gray hover:bg-red transition-all relative w-[157px] esm:w-[184px] sm:w-[184px] md:w-[264px] h-[158px] esm:h-[158px] sm:h-[167px] md:h-[264px] overflow-hidden">
                             <p class="text-bg-black esm:text-sm sm:text-sm md:text-xl p-8 font-black">Гель лаки</p>
                             <img class="absolute left-12 -bottom-16 mb-2 esm:w-[263px] sm:w-[360px] md:w-[360px]" src="./src/img/category/category_2.png" alt="">
-                        </li>  
-                        <li class="rounded-md bg-light-gray hover:bg-red transition-all relative w-[157px] esm:w-[164px] sm:w-[158px] md:w-[264px] h-[158px] esm:h-[158px] sm:h-[167px] md:h-[264px] overflow-hidden">
+                        </li>        
+                        <li class="rounded-md bg-light-gray hover:bg-red transition-all relative w-[157px] esm:w-[184px] sm:w-[184px] md:w-[264px] h-[158px] esm:h-[158px] sm:h-[167px] md:h-[264px] overflow-hidden">
                             <p class="text-bg-black esm:text-sm sm:text-sm md:text-xl p-8 font-black">Гель лаки</p>
                             <img class="absolute left-12 -bottom-16 mb-2 esm:w-[263px] sm:w-[360px] md:w-[360px]" src="./src/img/category/category_2.png" alt="">
-                        </li>  
+                        </li>        
+                        <li class="rounded-md bg-light-gray hover:bg-red transition-all relative w-[157px] esm:w-[184px] sm:w-[184px] md:w-[264px] h-[158px] esm:h-[158px] sm:h-[167px] md:h-[264px] overflow-hidden">
+                            <p class="text-bg-black esm:text-sm sm:text-sm md:text-xl p-8 font-black">Гель лаки</p>
+                            <img class="absolute left-12 -bottom-16 mb-2 esm:w-[263px] sm:w-[360px] md:w-[360px]" src="./src/img/category/category_2.png" alt="">
+                        </li>        
+                          
                     </ul>
 
 
