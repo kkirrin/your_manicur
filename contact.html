@@ -15,8 +15,8 @@
 <body>
     
     <div>
-        <header class="border-b-8 z-10 w-full md-28 transition-colors fixed py-4 bg-white">
-            <div class="container md:gap-5 items-center justify-between flex md:pt-2">
+        <header class="z-10 w-full md-28 transition-colors fixed py-4 bg-white">
+            <div class="wrapper container md:gap-5 items-center justify-between flex pt-2 border-b-2 border-light-gray pb-0 esm:pb-0 sm:pb-2 md:pb-2">
 
                 <!-- Мобильная кнопка -->
                 <div class="flex items-center justify-center gap-2">
@@ -31,13 +31,13 @@
                         
                     </div>
 
-                    <img class="m-auto w-28 flex esm:flex sm:hidden md:hidden" src="./src/img/logo.png" alt="Logo">
+                    <a href="/"><img class="m-auto w-28 flex esm:flex sm:hidden md:hidden" src="./src/img/logo.png" alt="Logo"></a>
 
                     
                     
             
                     <div class=" hidden esm:hidden sm:flex md:flex gap-6">
-                        <img class="m-auto w-32 md:w-48" src="./src/img/logo.png" alt="Logo">
+                        <a href="/"><img class="m-auto w-32 md:w-48" src="./src/img/logo.png" alt="Logo"></a>
                         <div class="flex items-center">
                             <div class="relative">
                                 <input class="rounded-md bg-light-gray py-3 px-5 hidden esm:hidden sm:flex" type="search" placeholder="Поиск по товарам...">
@@ -95,750 +95,695 @@
                 
                 <div class="gap-5 items-center justify-center hidden esm:hidden sm:flex md:hidden">
                     <span class="">Доставка и оплата</span>
-                    <span class="">Контакты</span>
-                    <a class="text-white py-3 px-2 rounded-md bg-bg-black" href="contact.html">Вход/регистрация</a>
+                    <span class="">Контакты</span>  
+                    <button class="text-white py-3 px-5 rounded-md bg-bg-black header-wrapper" >Вход/регистрация</button>
+                        <div class="modal-wrapper w-60 hidden">
+                            <div class="modal-content">
+                                <ul class="p-5">
+                                    <li>
+                                        <a href="#" class="font-semibold text-main-black block">Личный кабинет</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="font-semibold text-green block pt-5">Вход</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="font-semibold  text-dark-pink block pt-5">Регистрация</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>      
                 </div>
 
                 <div class="gap-5 items-center justify-center flex sm:hidden md:hidden">
                     <div class="mr-4 flex items-center justify-start font-bold">
-                        <button class="text-main-black" href="#">
-                            <img class="bg-bg-gray p-2 rounded-md up" src="./src/img/icons/cart.svg" alt="" >
+                        <button class="text-main-black header-wrapper">
+                            <img class="bg-bg-gray p-2 rounded-md" src="./src/img/icons/cart.svg" alt="" >
                         </button>
+                        <div class="modal-wrapper w-60 hidden">
+                            <div class="modal-content">
+                                <div>
+                                    <p>Корзина пуста!</p>
+                                </div>
+                            </div>
+                        </div>      
                         <span class="text-xs">0</span> <span class="text-xs">шт</span><span>()</span>
                     </div>
-                    <img class=" bg-light-gray p-2 rounded-md" src="./src/img/icons/search.svg" alt="" ></a></li>
-                    <img class=" bg-bg-black p-2 rounded-md" src="./src/img/icons/login.svg" alt="" ></a></li>
+                    <button class="header-wrapper"><img class=" bg-light-gray p-2 rounded-md" src="./src/img/icons/search.svg" alt="" ></button></li>
+                    <div class="modal-wrapper w-60 hidden mr-10">
+                        <div class="modal-content">
+                            <div class="flex items-center">
+                                <div class="relative">
+                                    <input class="rounded-md bg-light-gray py-3 px-5" type="search" placeholder="Поиск по товарам...">
+                                    <img src="./src/img/icons/search.svg" alt="Search" class="h-6 w-6 absolute top-1/2 right-3 transform -translate-y-1/2"/>
+                                </div>
+                            </div>
+                        </div>
+                    </div>      
+                    <button class="header-wrapper"><img class=" bg-bg-black p-2 rounded-md" src="./src/img/icons/login.svg" alt="" ></button></li>
+                    <div class="modal-wrapper w-60 hidden">
+                        <div class="modal-content">
+                            <ul class="p-5">
+                                <li>
+                                    <a href="#" class="font-semibold text-main-black block">Личный кабинет</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="font-semibold text-green block pt-5">Вход</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="font-semibold  text-dark-pink block pt-5">Регистрация</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>      
                 </div>
+
+                <section id="popup1" class="popup">
+                    <div class="popup__body">
+                        <div class="popup__content">
+                            <button class="popup__btn close-popup" aria-label="Закрыть" tabindex="4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18" fill="none">
+                                    <path d="M4 1.45508L19.9099 17.365" stroke="#FCBC40"/>
+                                    <path d="M4.54492 16.9099L20.4548 1.00001" stroke="#FCBC40"/>
+                                    </svg>
+                            </button>
+                            <h2 class="text-start text-white z-10 font-normal md:text-4xl text-xl uppercase pb-4 ">Найти</h2>
+            
+                            <div class="flex items-center">
+                                <div class="relative">
+                                    <input class="rounded-md bg-light-gray py-3 px-5" type="search" placeholder="Поиск по товарам...">
+                                    <img src="./src/img/icons/search.svg" alt="Search" class="h-6 w-6 absolute top-1/2 right-3 transform -translate-y-1/2"/>
+                              </div>
+                    </div>
+                </section>
+                <section id="popup2" class="popup">
+                    <div class="popup__body">
+                        <div class="popup__content">
+                            <button class="popup__btn close-popup" aria-label="Закрыть" tabindex="4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="23" height="18" viewBox="0 0 23 18" fill="none">
+                                    <path d="M4 1.45508L19.9099 17.365" stroke="#FCBC40"/>
+                                    <path d="M4.54492 16.9099L20.4548 1.00001" stroke="#FCBC40"/>
+                                    </svg>
+                            </button>
+                            <div class="modal-content">
+                                <ul class="p-5">
+                                    <li>
+                                        <a href="#" class="font-semibold text-main-black block">Личный кабинет</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="font-semibold text-green block pt-5 hover:text-red transition-all">Вход</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="font-semibold  text-dark-pink block pt-5 hover:text-red transition-all">Регистрация</a>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </section>
 
                 
                 <ul class="mobile gap-2 flex-wrap text-main-black hidden esm:hidden sm:hidden md:flex items-center justify-center">
                     <li class="mr-4"><a class="text-gray hover:text-red transition-all" href="order.html">Доставка и оплата</a></li>
                     <li class="mr-4"><a class="text-gray hover:text-red transition-all" href="contact.html">Контакты</a></li>
-                    <li class="mr-4"><a class="text-white py-3 px-5 rounded-md bg-bg-black" href="contact.html">Вход/регистрация</a></li>
+                    <li class="mr-4">
+                        <button class="text-white py-3 px-5 rounded-md bg-bg-black header-wrapper" >Вход/регистрация</button>
+                        <div class="modal-wrapper w-60 hidden">
+                            <div class="modal-content">
+                                <ul class="p-5">
+                                    <li>
+                                        <a href="#" class="font-semibold text-main-black block">Личный кабинет</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="font-semibold text-green block pt-5">Вход</a>
+                                    </li>
+                                    <li>
+                                        <a href="#" class="font-semibold  text-dark-pink block pt-5">Регистрация</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>      
+        
+                      </li>
                     <li class="mr-4 flex items-center justify-start font-bold">
-                        <button class="text-main-black" href="#">
-                            <img class="bg-bg-gray p-2 rounded-md up" src="./src/img/icons/cart.svg" alt="" >
+                        <button class="text-main-black header-wrapper">
+                            <img class="bg-bg-gray p-2 rounded-md" src="./src/img/icons/cart.svg" alt="" >
                         </button>
+                        <div class="modal-wrapper w-60 hidden">
+                            <div class="modal-content">
+                                <div>
+                                    <p>Корзина пуста!</p>
+                                </div>
+                            </div>
+                        </div>      
                         <span>0</span> <span>шт</span><span>()</span>
                     </li>
                 </ul>
-
-                
+     
             </div>
+            <div class="container">
+                <menu class="header-menu pt-0 esm:pt-0 sm:pt-7 md:pt-9 pb-0 esm:pb-0 sm:pb-4 md:pb-4 hidden esm:hidden sm:block md:block">
+                    <ul class="gap-4 relative flex justify-start flex-wrap">
+                    
+                        <li class="menu-slide">
+                            Гель лаки
+                            <ul class="sub-menu transition-opacity duration-300">
+                                <li>
+                                    <div class="p-10 flex gap-10 items-center justify-start shadow-3xl">      
+                                        <ul>
+                                            <div>
+                                                Бренд
+                                            </div>
+                                            <li class="text-gray">42342</li>
+                                            <li class="text-gray">23424123</li>
+                                            <li class="text-gray">1242342343</li>
+                                            <li class="text-gray">1224243</li>
+                                            <li class="text-gray">342</li>
+                                        </ul>
+                                        <ul>
+                                            <div>
+                                                Бренд
+                                            </div>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                        </ul>
+                                        <ul>
+                                            <div>
+                                                Бренд
+                                            </div>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-slide">
+                            Гель лаки
+                            <ul class="sub-menu transition-opacity duration-300">
+                                <li>
+                                    <div class="p-10 flex gap-10 items-center justify-start shadow-3xl">      
+                                        <ul>
+                                            <div>
+                                                Бренд
+                                            </div>
+                                            <li class="text-gray">42342</li>
+                                            <li class="text-gray">23424123</li>
+                                            <li class="text-gray">1242342343</li>
+                                            <li class="text-gray">1224243</li>
+                                            <li class="text-gray">342</li>
+                                        </ul>
+                                        <ul>
+                                            <div>
+                                                Бренд
+                                            </div>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                        </ul>
+                                        <ul>
+                                            <div>
+                                                Бренд
+                                            </div>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-slide">
+                            Гель лаки
+                            <ul class="sub-menu transition-opacity duration-300">
+                                <li>
+                                    <div class="p-10 flex gap-10 items-center justify-start shadow-3xl">      
+                                        <ul>
+                                            <div>
+                                                Бренд
+                                            </div>
+                                            <li class="text-gray">42342</li>
+                                            <li class="text-gray">23424123</li>
+                                            <li class="text-gray">1242342343</li>
+                                            <li class="text-gray">1224243</li>
+                                            <li class="text-gray">342</li>
+                                        </ul>
+                                        <ul>
+                                            <div>
+                                                Бренд
+                                            </div>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                        </ul>
+                                        <ul>
+                                            <div>
+                                                Бренд
+                                            </div>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-slide">
+                            Гель лаки
+                            <ul class="sub-menu transition-opacity duration-300">
+                                <li>
+                                    <div class="p-10 flex gap-10 items-center justify-start shadow-3xl">      
+                                        <ul>
+                                            <div>
+                                                Бренд
+                                            </div>
+                                            <li class="text-gray">42342</li>
+                                            <li class="text-gray">23424123</li>
+                                            <li class="text-gray">1242342343</li>
+                                            <li class="text-gray">1224243</li>
+                                            <li class="text-gray">342</li>
+                                        </ul>
+                                        <ul>
+                                            <div>
+                                                Бренд
+                                            </div>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                        </ul>
+                                        <ul>
+                                            <div>
+                                                Бренд
+                                            </div>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-slide">
+                            Гель лаки
+                            <ul class="sub-menu transition-opacity duration-300">
+                                <li>
+                                    <div class="p-10 flex gap-10 items-center justify-start shadow-3xl">      
+                                        <ul>
+                                            <div>
+                                                Бренд
+                                            </div>
+                                            <li class="text-gray">42342</li>
+                                            <li class="text-gray">23424123</li>
+                                            <li class="text-gray">1242342343</li>
+                                            <li class="text-gray">1224243</li>
+                                            <li class="text-gray">342</li>
+                                        </ul>
+                                        <ul>
+                                            <div>
+                                                Бренд
+                                            </div>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                        </ul>
+                                        <ul>
+                                            <div>
+                                                Бренд
+                                            </div>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-slide">
+                            Гель лаки
+                            <ul class="sub-menu transition-opacity duration-300">
+                                <li>
+                                    <div class="p-10 flex gap-10 items-center justify-start shadow-3xl">      
+                                        <ul>
+                                            <div>
+                                                Бренд
+                                            </div>
+                                            <li class="text-gray">42342</li>
+                                            <li class="text-gray">23424123</li>
+                                            <li class="text-gray">1242342343</li>
+                                            <li class="text-gray">1224243</li>
+                                            <li class="text-gray">342</li>
+                                        </ul>
+                                        <ul>
+                                            <div>
+                                                Бренд
+                                            </div>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                        </ul>
+                                        <ul>
+                                            <div>
+                                                Бренд
+                                            </div>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-slide">
+                            Гель лаки
+                            <ul class="sub-menu transition-opacity duration-300">
+                                <li>
+                                    <div class="p-10 flex gap-10 items-center justify-start shadow-3xl">      
+                                        <ul>
+                                            <div>
+                                                Бренд
+                                            </div>
+                                            <li class="text-gray">42342</li>
+                                            <li class="text-gray">23424123</li>
+                                            <li class="text-gray">1242342343</li>
+                                            <li class="text-gray">1224243</li>
+                                            <li class="text-gray">342</li>
+                                        </ul>
+                                        <ul>
+                                            <div>
+                                                Бренд
+                                            </div>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                        </ul>
+                                        <ul>
+                                            <div>
+                                                Бренд
+                                            </div>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-slide">
+                            Гель лаки
+                            <ul class="sub-menu transition-opacity duration-300">
+                                <li>
+                                    <div class="p-10 flex gap-10 items-center justify-start shadow-3xl">      
+                                        <ul>
+                                            <div>
+                                                Бренд
+                                            </div>
+                                            <li class="text-gray">42342</li>
+                                            <li class="text-gray">23424123</li>
+                                            <li class="text-gray">1242342343</li>
+                                            <li class="text-gray">1224243</li>
+                                            <li class="text-gray">342</li>
+                                        </ul>
+                                        <ul>
+                                            <div>
+                                                Бренд
+                                            </div>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                        </ul>
+                                        <ul>
+                                            <div>
+                                                Бренд
+                                            </div>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-slide">
+                            Гель лаки
+                            <ul class="sub-menu transition-opacity duration-300">
+                                <li>
+                                    <div class="p-10 flex gap-10 items-center justify-start shadow-3xl">      
+                                        <ul>
+                                            <div>
+                                                Бренд
+                                            </div>
+                                            <li class="text-gray">42342</li>
+                                            <li class="text-gray">23424123</li>
+                                            <li class="text-gray">1242342343</li>
+                                            <li class="text-gray">1224243</li>
+                                            <li class="text-gray">342</li>
+                                        </ul>
+                                        <ul>
+                                            <div>
+                                                Бренд
+                                            </div>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                        </ul>
+                                        <ul>
+                                            <div>
+                                                Бренд
+                                            </div>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-slide">
+                            Гель лаки
+                            <ul class="sub-menu transition-opacity duration-300">
+                                <li>
+                                    <div class="p-10 flex gap-10 items-center justify-start shadow-3xl">      
+                                        <ul>
+                                            <div>
+                                                Бренд
+                                            </div>
+                                            <li class="text-gray">42342</li>
+                                            <li class="text-gray">23424123</li>
+                                            <li class="text-gray">1242342343</li>
+                                            <li class="text-gray">1224243</li>
+                                            <li class="text-gray">342</li>
+                                        </ul>
+                                        <ul>
+                                            <div>
+                                                Бренд
+                                            </div>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                        </ul>
+                                        <ul>
+                                            <div>
+                                                Бренд
+                                            </div>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-slide">
+                            Гель лаки
+                            <ul class="sub-menu transition-opacity duration-300">
+                                <li>
+                                    <div class="p-10 flex gap-10 items-center justify-start shadow-3xl">      
+                                        <ul>
+                                            <div>
+                                                Бренд
+                                            </div>
+                                            <li class="text-gray">42342</li>
+                                            <li class="text-gray">23424123</li>
+                                            <li class="text-gray">1242342343</li>
+                                            <li class="text-gray">1224243</li>
+                                            <li class="text-gray">342</li>
+                                        </ul>
+                                        <ul>
+                                            <div>
+                                                Бренд
+                                            </div>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                        </ul>
+                                        <ul>
+                                            <div>
+                                                Бренд
+                                            </div>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-slide">
+                            Гель лаки
+                            <ul class="sub-menu transition-opacity duration-300">
+                                <li>
+                                    <div class="p-10 flex gap-10 items-center justify-start shadow-3xl">      
+                                        <ul>
+                                            <div>
+                                                Бренд
+                                            </div>
+                                            <li class="text-gray">42342</li>
+                                            <li class="text-gray">23424123</li>
+                                            <li class="text-gray">1242342343</li>
+                                            <li class="text-gray">1224243</li>
+                                            <li class="text-gray">342</li>
+                                        </ul>
+                                        <ul>
+                                            <div>
+                                                Бренд
+                                            </div>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                        </ul>
+                                        <ul>
+                                            <div>
+                                                Бренд
+                                            </div>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="menu-slide">
+                            Гель для моделирования
+                            <ul class="sub-menu transition-opacity duration-300">
+                                <li>
+                                    <div class="p-10 flex gap-10 items-center justify-start shadow-3xl">      
+                                        <ul>
+                                            <div>
+                                                Бренд
+                                            </div>
+                                            <li class="text-gray">42342</li>
+                                            <li class="text-gray">23424123</li>
+                                            <li class="text-gray">1242342343</li>
+                                            <li class="text-gray">1224243</li>
+                                            <li class="text-gray">342</li>
+                                        </ul>
+                                        <ul>
+                                            <div>
+                                                Бренд
+                                            </div>
+                                            <li class="text-gray">42342</li>
+                                            <li class="text-gray">23424123</li>
+                                            <li class="text-gray">1242342343</li>
+                                            <li class="text-gray">1224243</li>
+                                            <li class="text-gray">342</li>
+                                        </ul>
+                                        <ul>
+                                            <div>
+                                                Бренд
+                                            </div>
+                                            <li class="text-gray">42342</li>
+                                            <li class="text-gray">23424123</li>
+                                            <li class="text-gray">1242342343</li>
+                                            <li class="text-gray">1224243</li>
+                                            <li class="text-gray">342</li>
+                                        </ul>
+                                        <ul>
+                                            <div>
+                                                Бренд
+                                            </div>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                        </ul>
+                                        <ul>
+                                            <div>
+                                                Бренд
+                                            </div>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                            <li class="text-gray">123</li>
+                                        </ul>
+                                    </div>
+                                </li>
+                            </ul>
+                        </li>
+                      
+                    </ul>
+                </menu>
+            </div>
+        
+
         </header>
 
         <main>
             <h1 class="visually-hidden">Скрытый заголовок</h1>
-            <section class="pt-28">
+            <section class="pt-24 esm:pt-24 sm:pt-40 md:pt-44">
                 <div class="container">
-                    <menu class="header-menu py-0 esm:py-0 sm:py-8 md:py-9 hidden esm:hidden sm:block md:block">
-                        <ul class="gap-4 relative flex justify-start flex-wrap">
-                        
-                            <li class="menu-slide">
-                                Гель лаки
-                                <ul class="sub-menu transition-opacity duration-300 absolute top-0">
-                                    <li>
-                                        <div class="p-10 flex gap-10 items-center justify-start shadow-3xl">      
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">42342</li>
-                                                <li class="text-gray">23424123</li>
-                                                <li class="text-gray">1242342343</li>
-                                                <li class="text-gray">1224243</li>
-                                                <li class="text-gray">342</li>
-                                            </ul>
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="menu-slide">
-                                Гель лаки
-                                <ul class="sub-menu transition-opacity duration-300 absolute top-0">
-                                    <li>
-                                        <div class="p-10 flex gap-10 items-center justify-start shadow-3xl">      
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="menu-slide">
-                                Гель лаки
-                                <ul class="sub-menu transition-opacity duration-300 absolute top-0">
-                                    <li>
-                                        <div class="p-10 flex gap-10 items-center justify-start shadow-3xl">      
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="menu-slide">
-                                Гель лаки
-                                <ul class="sub-menu transition-opacity duration-300 absolute top-0">
-                                    <li>
-                                        <div class="p-10 flex gap-10 items-center justify-start shadow-3xl">      
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="menu-slide">
-                                Гель лаки
-                                <ul class="sub-menu transition-opacity duration-300 absolute top-0">
-                                    <li>
-                                        <div class="p-10 flex gap-10 items-center justify-start shadow-3xl">      
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="menu-slide">
-                                Гель лаки
-                                <ul class="sub-menu transition-opacity duration-300 absolute top-0">
-                                    <li>
-                                        <div class="p-10 flex gap-10 items-center justify-start shadow-3xl">      
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="menu-slide">
-                                Гель лаки
-                                <ul class="sub-menu transition-opacity duration-300 absolute top-0">
-                                    <li>
-                                        <div class="p-10 flex gap-10 items-center justify-start shadow-3xl">      
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">42342</li>
-                                                <li class="text-gray">23424123</li>
-                                                <li class="text-gray">1242342343</li>
-                                                <li class="text-gray">1224243</li>
-                                                <li class="text-gray">342</li>
-                                            </ul>
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="menu-slide">
-                                Гель лаки
-                                <ul class="sub-menu transition-opacity duration-300 absolute top-0">
-                                    <li>
-                                        <div class="p-10 flex gap-10 items-center justify-start shadow-3xl">      
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="menu-slide">
-                                Гель лаки
-                                <ul class="sub-menu transition-opacity duration-300 absolute top-0">
-                                    <li>
-                                        <div class="p-10 flex gap-10 items-center justify-start shadow-3xl">      
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="menu-slide">
-                                Гель лаки
-                                <ul class="sub-menu transition-opacity duration-300 absolute top-0">
-                                    <li>
-                                        <div class="p-10 flex gap-10 items-center justify-start shadow-3xl">      
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="menu-slide">
-                                Гель лаки
-                                <ul class="sub-menu transition-opacity duration-300 absolute top-0">
-                                    <li>
-                                        <div class="p-10 flex gap-10 items-center justify-start shadow-3xl">      
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="menu-slide">
-                                Гель лаки
-                                <ul class="sub-menu transition-opacity duration-300 absolute top-0">
-                                    <li>
-                                        <div class="p-10 flex gap-10 items-center justify-start shadow-3xl">      
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="menu-slide">
-                                Гель лаки
-                                <ul class="sub-menu transition-opacity duration-300 absolute top-0">
-                                    <li>
-                                        <div class="p-10 flex gap-10 items-center justify-start shadow-3xl">      
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">42342</li>
-                                                <li class="text-gray">23424123</li>
-                                                <li class="text-gray">1242342343</li>
-                                                <li class="text-gray">1224243</li>
-                                                <li class="text-gray">342</li>
-                                            </ul>
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="menu-slide">
-                                Гель лаки
-                                <ul class="sub-menu transition-opacity duration-300 absolute top-0">
-                                    <li>
-                                        <div class="p-10 flex gap-10 items-center justify-start shadow-3xl">      
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="menu-slide">
-                                Гель лаки
-                                <ul class="sub-menu transition-opacity duration-300 absolute top-0">
-                                    <li>
-                                        <div class="p-10 flex gap-10 items-center justify-start shadow-3xl">      
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="menu-slide">
-                                Гель лаки
-                                <ul class="sub-menu transition-opacity duration-300 absolute top-0">
-                                    <li>
-                                        <div class="p-10 flex gap-10 items-center justify-start shadow-3xl">      
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="menu-slide">
-                                Гель лаки
-                                <ul class="sub-menu transition-opacity duration-300 absolute top-0">
-                                    <li>
-                                        <div class="p-10 flex gap-10 items-center justify-start shadow-3xl">      
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="menu-slide">
-                                Гель лаки
-                                <ul class="sub-menu transition-opacity duration-300 absolute top-0">
-                                    <li>
-                                        <div class="p-10 flex gap-10 items-center justify-start shadow-3xl">      
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                            <ul>
-                                                <div>
-                                                    Бренд
-                                                </div>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                                <li class="text-gray">123</li>
-                                            </ul>
-                                        </div>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </menu>
-
                     <div class="breadcrumb">
                         <ul class="breadcrumb__list flex items-center justify-start gap-2">
                             <li class="breadcrumb__item text-bg-black opacity-60 ">
@@ -948,18 +893,23 @@
             </div>
         
             <div class="container flex items-center justify-between text-gray pt-6">
-                <div class="text-xs">
+                <div class="text-xs flex justify-center items-center gap-5">
                     <p>«Твой маникюрный» © 2023 Все права защищены</p>
+                    <img src="./src/img/icons/mastercard.svg" alt="">
+                    <img src="./src/img/icons/visa.svg" alt="">
+                    <img src="./src/img/icons/mir.svg" alt="">
                 </div>
                 <a href="#" class="text-xs underline">
                     Политика обработки персональных данных
                 </a>
-            </div>    
+            </div>  
         </footer>
 
-    <div class="scroll-top">
-        <img src="./src/img/icons/arrow.svg" alt="стрелка вверх">
-    </div>
+        <div class="scroll-top">
+            <svg class="arrow" xmlns="http://www.w3.org/2000/svg" width="16" height="27" viewBox="0 0 16 27" fill="none">
+                <path d="M7 26C7 26.5523 7.44772 27 8 27C8.55228 27 9 26.5523 9 26H7ZM8.70711 0.292893C8.31658 -0.0976311 7.68342 -0.0976311 7.29289 0.292893L0.928932 6.65685C0.538408 7.04738 0.538408 7.68054 0.928932 8.07107C1.31946 8.46159 1.95262 8.46159 2.34315 8.07107L8 2.41421L13.6569 8.07107C14.0474 8.46159 14.6805 8.46159 15.0711 8.07107C15.4616 7.68054 15.4616 7.04738 15.0711 6.65685L8.70711 0.292893ZM9 26V1H7V26H9Z" fill="#202020"/>
+            </svg>
+        </div>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/wow.js"></script>
     <script src="js/baguettebox.js"></script>

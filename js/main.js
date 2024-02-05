@@ -6,6 +6,8 @@ import { initPopup } from "./module/popup.js";
 import { initMenuSLider } from "./module/menuSlider.js";
 import { initDropList } from "./module/dropList.js";
 import { initSaleSlider } from "./module/saleSlider.js";
+import { initDistance } from "./module/distance.js";
+import { initNavModal } from "./module/modal.js";
 
 
 window.addEventListener('DOMContentLoaded', () => {
@@ -20,5 +22,7 @@ window.addEventListener('DOMContentLoaded', () => {
     initMenuSLider();
     initDropList();
     initSaleSlider();
+    initDistance();
+    initNavModal();
 
 });
